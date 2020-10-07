@@ -1,6 +1,6 @@
 # Grupo 2
 
-- URL página: https://grupoprueba-pv-2020-2.herokuapp.com/
+- URL página: https://grupo2-pv-2020-2.herokuapp.com/
 
 ## Integración continua:
 Cada vez que hagan un `push` a la rama `main` del repositorio (es decir, suban nuevo código), este se subirá automáticamente en el link que se menciona arriba.
