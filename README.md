@@ -4,7 +4,7 @@
 
 Este link se actualiza automáticamente con el contenido del repositorio en `main`.
 
-## Integración continua:
+## Trabajo:
 Finalmente vamos a trabajar en una sola página, por lo que los cambios deberán ser realizados en `index.html`.
 
 ## Cuidado:
