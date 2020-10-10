@@ -1,0 +1,49 @@
+body{
+    background: #000D14;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px 0;
+}
+
+#inicio {
+    height: 100%;
+    text-align: center;
+
+}
+
+h1{
+	color: white;
+	font-size: 50px;
+	width: 100%;
+}
+
+#titulo {
+    text-align: center;
+    margin: 150 0 75;
+    font-family: 'Inter', sans-serif;
+}
+
+#botones_1 div {
+    float: left;
+    text-align: center;
+    margin-left: 200px;
+    width: 150px;
+    padding: 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+.boton {
+	top:370px;
+	bottom: ;
+	right: ;
+	left: 600px;
+	text-align: center;
+	position: absolute;
+}
+
+.hidden {
+	display: none;
+}
