@@ -150,6 +150,9 @@ h1.whitemode {
     padding-top: 15rem; 
 }
 
+#bt_color {
+    cursor: pointer; /* esto es para que el boton tenga un cursos "clickeable" */
+}
 
 @media only screen and (max-width: 1033px){
 
