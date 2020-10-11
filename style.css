@@ -84,9 +84,14 @@ h1.whitemode {
     min-height: 100%;
 }
 
-#mapa_chile {
+#mapa_chile_container {
     padding-left: 20px;
 }
+#mapa_chile {
+    height: 75%;
+}
+
+
 /* OCDE */
 #ocde {
     min-height: 100%;
