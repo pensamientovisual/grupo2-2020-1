@@ -70,3 +70,109 @@ h1{
 
 
 /* OCDE */
+
+
+/* LA BARRA */
+
+.container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.header{
+    background: #000D14;
+    color: white;
+    padding: 0rem 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white; 
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+    .header a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    letter-spacing: 18px;
+    font-size: 1.4em;
+}
+
+.menu-icon{
+    display: none;
+    }
+
+.navigation ul{
+   margen: 0;
+   padding: 0;
+   list-style: none; 
+}
+    .navigation ul li{
+        display: inline-block;
+    }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;   
+            border-radius: 5px; 
+        }
+
+            .navigation ul li a:hover{
+                background: #4a4a4a;
+            }
+
+.main{
+    padding-top: 15rem; 
+}
+
+
+@media only screen and (max-width: 1033px){
+
+    .menu-icon{
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    }
+
+    .navigation ul{
+        display: none;
+    }
+
+    .navigation ul.show{
+        display: block;
+    }
+        .navigation{
+           width: 100%;
+           margin-top: 1rem; 
+        }
+            .navigation ul li{
+                display: block;
+            }
+                .navigation ul li a{
+                    display: block;
+                    padding: 0.5rem 0rem;
+                    transition: all 0.4s linear;   
+                    border-radius: 5px; 
+                }
+
+                    .navigation ul li a:hover{
+                        background: #4a4a4a;
+                    }
+
+}
+
+
+
+
