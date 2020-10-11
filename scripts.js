@@ -37,11 +37,20 @@ $(document).ready(function(){
 		var altura = $(window).height();
 		if ($(window).scrollTop() > altura) {
 			$('header').css('position', 'fixed');
-			$('.main').css('margin-top', alt_nav);
 		} else {
 			$('header').css('position','unset');
 		}
 	});
+
+	$(window).bind('scroll', function () {
+		var altura = $(window).height();
+		if ($(window).scrollTop() > altura-1) {
+			$('.main').css('margin-top', alt_nav);
+		} else {
+			$('.main').css('margin-top', 0);
+		}
+	});
+
 
 	$('#chile').css('padding-top', alt_nav);
 	$('#ocde').css('padding-top', alt_nav);
