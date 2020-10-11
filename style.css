@@ -147,7 +147,8 @@ h1.whitemode {
 }
 
 .main{
-    padding-top: 15rem; 
+    padding-top: 15rem;
+    padding-bottom: 15rem; 
 }
 
 #bt_color {
@@ -169,23 +170,25 @@ h1.whitemode {
     .navigation ul.show{
         display: block;
     }
-        .navigation{
-           width: 100%;
-           margin-top: 1rem; 
-        }
-            .navigation ul li{
-                display: block;
-            }
-                .navigation ul li a{
-                    display: block;
-                    padding: 0.5rem 0rem;
-                    transition: all 0.4s linear;   
-                    border-radius: 5px; 
-                }
+    
+    .navigation{
+        width: 100%;
+        margin-top: 1rem; 
+    }
+    
+    .navigation ul li{
+        display: block;
+    }
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0rem;
+        transition: all 0.4s linear;   
+        border-radius: 5px; 
+    }
 
-                    .navigation ul li a:hover{
-                        background: #4a4a4a;
-                    }
+    .navigation ul li a:hover{
+        background: #4a4a4a;
+    }
 
 }
 
