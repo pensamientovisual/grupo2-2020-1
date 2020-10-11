@@ -28,10 +28,21 @@ $(document).ready(function(){
 			$('h1').removeClass("whitemode")
 			$('.boton1').removeClass("whitemode")
 
-		}
-		
-
-		
+		}	
 	});
+
+	$(window).bind('scroll', function () {
+		var altura = $(window).height();
+		if ($(window).scrollTop() > altura) {
+			$('header').css('position', 'fixed');
+		} else {
+			$('header').css('position','unset');
+		}
+	});
+
+	var alt_nav = $('nav').height();
+	
+
+
 });
 
