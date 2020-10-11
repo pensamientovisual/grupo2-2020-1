@@ -80,16 +80,17 @@ h1.whitemode {
 }
 
 /* CHILE */
+#chile {
+    min-height: 100%;
+}
+
 #mapa_chile {
     padding-left: 20px;
 }
-
-
-
-
-
 /* OCDE */
-
+#ocde {
+    min-height: 100%;
+}
 
 /* LA BARRA */
 

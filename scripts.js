@@ -31,16 +31,20 @@ $(document).ready(function(){
 		}	
 	});
 
+	var alt_nav = $('nav').height();
+
 	$(window).bind('scroll', function () {
 		var altura = $(window).height();
 		if ($(window).scrollTop() > altura) {
 			$('header').css('position', 'fixed');
+			$('.main').css('margin-top', alt_nav);
 		} else {
 			$('header').css('position','unset');
 		}
 	});
 
-	var alt_nav = $('nav').height();
+	$('#chile').css('padding-top', alt_nav);
+	$('#ocde').css('padding-top', alt_nav);
 	
 
 
