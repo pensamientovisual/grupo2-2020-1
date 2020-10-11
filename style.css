@@ -19,6 +19,19 @@ h1{
 }
 
 
+/* MODO CLARO */
+body.whitemode {
+    background: white;
+}
+
+h1.whitemode {
+	color: black;
+}
+
+.boton1.whitemode {
+    border: 1px solid black;
+    color: black;
+}
 
 /* PORTADA */
 
@@ -115,23 +128,23 @@ h1{
     }
 
 .navigation ul{
-   margen: 0;
+   /* margen: 0; */
    padding: 0;
    list-style: none; 
 }
-    .navigation ul li{
-        display: inline-block;
-    }
-        .navigation ul li a{
-            display: block;
-            padding: 0.5rem 1rem;
-            transition: all 0.4s linear;   
-            border-radius: 5px; 
-        }
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;   
+    border-radius: 5px; 
+}
 
-            .navigation ul li a:hover{
-                background: #4a4a4a;
-            }
+.navigation ul li a:hover{
+    background: #4a4a4a;
+}
 
 .main{
     padding-top: 15rem; 
