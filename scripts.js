@@ -15,15 +15,23 @@ $(document).ready(function(){
     $("#bt_color").click(function(){
 		console.log('test')
 		if(color == 'oscuro') {
+			color = 'claro';
 			$("#bt_color_txt").text(`Modo Oscuro`)
-			$(document.body).addClass("whitemode")
-            color = 'claro';
+			$('body').addClass("whitemode")
+			$('h1').addClass("whitemode")
+			$('.boton1').addClass("whitemode")
         }
         else {
+			color = 'oscuro';
             $("#bt_color_txt").text(`Modo Claro`)
 			$("body").removeClass("whitemode")
-            color = 'oscuro';
-        }
+			$('h1').removeClass("whitemode")
+			$('.boton1').removeClass("whitemode")
+
+		}
+		
+
+		
 	});
 });
 

@@ -28,6 +28,10 @@ h1.whitemode {
 	color: black;
 }
 
+.boton1.whitemode {
+    border: 1px solid black;
+    color: black;
+}
 
 /* PORTADA */
 
