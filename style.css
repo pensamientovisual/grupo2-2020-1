@@ -71,7 +71,12 @@ h1.whitemode {
     border: 1px solid white;
     color: white;
     font-size: 1.5em;
+    transition: all 0.2s linear;
 }
+
+    .boton1:hover {
+        background-color: rgb(56, 71, 70);
+    }
 
 .espaciador1 {
     display: inline-block;
@@ -148,7 +153,7 @@ h1.whitemode {
 .navigation ul li a{
     display: block;
     padding: 0.5rem 1rem;
-    transition: all 0.4s linear;   
+    transition: all 0.2s linear;   
     border-radius: 5px; 
 }
 
