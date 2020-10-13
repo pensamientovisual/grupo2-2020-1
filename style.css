@@ -32,7 +32,9 @@ body.whitemode {
 h1.whitemode {
 	color: black;
 }
-
+h2.whitemode{
+    color: black;
+}
 .boton1.whitemode {
     border: 1px solid black;
     color: black;
@@ -88,12 +90,36 @@ h1.whitemode {
 #chile {
     min-height: 100%;
 }
-
+#info_chile{
+    width: 100%;
+    margin-top: 75px;
+    padding-bottom: 5rem;
+}
+#datos_mapa_chile_1 {
+    width: 500px;
+    height: 500px;
+    float: left;
+    color: white;
+    float: left;
+    text-align: center;
+}
+#psu {
+    color: white;
+}
+#datos_mapa_chile_2 {
+    width: 500px;
+    height: 500px;
+    float: right;
+    color: white;
+    float: left;
+    text-align: center;
+}
 #mapa_chile_container {
-    padding-left: 20px;
+    margin: auto;
+    float: left;
 }
 #mapa_chile {
-    height: 75%;
+    height: 80%;
 }
 
 
