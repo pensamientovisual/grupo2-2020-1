@@ -178,7 +178,10 @@ p.whitemode{
 #mapa_chile {
     height: 80%;
 }
-
+#AricaParinacota,
+#Tarapacá{cursor:pointer;}
+#AricaParinacota:hover{opacity: 0.7;}
+#Tarapacá:hover{opacity: 0.7;}
 /* OCDE */
 #ocde {
     min-height: 100%;
