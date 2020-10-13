@@ -50,6 +50,7 @@ var datos = d3.dsv(";","/Archivos/tri_ocde.csv", function(d, index) {
     .attr('data-inm', dato_inm)
     .attr('data-ene', dato_ene)
     .attr('data-pais', d.pais)
+    .attr('class', 'capa_ocde');
 
 
 

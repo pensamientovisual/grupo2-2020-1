@@ -177,4 +177,16 @@ $(document).ready(function(){
 	 	}
 	 });
 
+
+	 // Grafico OCDE
+
+	 $('#Capa1').hover(function(){
+		 var pais_capa = $('#Capa1').attr('data-pais');
+		 var data_edu = $('#Capa1').attr('data-edu');
+		 var data_inm = $('#Capa1').attr('data-inm');
+		 var data_ene = $('#Capa1').attr('data-ene');
+		 console.log([pais_capa, data_edu, data_ene, data_inm]);
+		 $('#info_ocde1').text('País:'+pais_capa+' Promedio Pisa:'+data_edu+' Porcentaje Población Inmigrantes: '+data_inm+'  Porcentaje Energía Primaria Renovable: '+data_ene);
+	 });
+
 });
