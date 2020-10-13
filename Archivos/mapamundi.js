@@ -3,7 +3,7 @@ var maximo = 600
 var rango = maximo - minimo
 var valor = 2
 
-var datos = d3.dsv(";","/Archivos/pisa2018.csv", function(d) {
+var datos = d3.dsv(";","Archivos/pisa2018.csv", function(d) {
     var bandera0 = d3
         .select('#mapa_ocde')
         .select('#Flags')

@@ -243,7 +243,7 @@ p.whitemode{
     background: #4a4a4a;
 }
 
-#bt_color {
+#bt_color, .boton_pequeño {
     cursor: pointer; /* esto es para que el boton tenga un cursos "clickeable" */
 }
 
