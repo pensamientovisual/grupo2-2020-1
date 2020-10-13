@@ -21,6 +21,9 @@ h1{
 h2{
     color: white;
 }
+h3{
+    color: white;
+}
 
 p{
     color: white;
@@ -43,6 +46,10 @@ h1.whitemode{
 }
 
 h2.whitemode {
+    color: black;
+}
+
+h3.whitemode {
     color: black;
 }
 
@@ -168,6 +175,7 @@ p.whitemode{
     width: 100%;
     margin-top: 75px;
     padding-bottom: 5rem;
+    overflow: auto; /* SUPER IMPORTANTE, NO SACAR -Javier */
 }
 #datos_mapa_chile_1 {
     position: relative;
@@ -253,6 +261,9 @@ div#grafico_ocde {
     height: 70%;
 }
 
+#mapa_ocde svg text tspan{
+    font-size: 3em;
+}
 
 
 

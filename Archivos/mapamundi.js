@@ -32,4 +32,28 @@ var datos = d3.dsv(";","Archivos/pisa2018.csv", function(d) {
 
     // .attr('r', parseInt(d.numero)*10)
     // .style('fill', 'red')
+
+
+
+    d3.select('#mapa_ocde')
+        .select('#Flags')
+        .select('#'+d.codigo)
+        .attr('data-pais', d.pais)
+        .attr('data-lec', d.lectura)
+        .attr('data-mat', d.matematicas)
+        .attr('data-cie', d.ciencias)
+        .attr('class', 'pais_mapa');
+
+
+});
+
+
+$(document).ready(function(){
+    $('#mapa_ocde svg #Flags g').mouseover(function(){
+        var pais_capa = $(this).attr('data-pais');
+        var data_lec = $(this).attr('data-lec');
+        var data_mat = $(this).attr('data-mat');
+        var data_cie = $(this).attr('data-cie');
+        $('#info_mapamundi').text(pais_capa+' - Lectura: '+data_lec+' - Matemáticas: '+data_mat+' - Ciencias: '+data_cie);
+    });
 });

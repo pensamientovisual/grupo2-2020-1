@@ -62,3 +62,17 @@ var datos = d3.dsv(";","/Archivos/tri_ocde.csv", function(d, index) {
     //     .attr('transform');
     
 });
+
+
+$(document).ready(function(){
+
+    $('#grafico_ocde svg g').mouseover(function(){
+        console.log('Dentro de capa_ocde')
+        var pais_capa = $(this).attr('data-pais');
+        var data_edu = $(this).attr('data-edu');
+        var data_inm = $(this).attr('data-inm');
+        var data_ene = $(this).attr('data-ene');
+        console.log([pais_capa, data_edu, data_ene, data_inm]);
+        $('#info_ocde11').text('País:'+pais_capa+' Promedio Pisa:'+data_edu+' Porcentaje Población Inmigrantes: '+data_inm+'  Porcentaje Energía Primaria Renovable: '+data_ene);
+    });
+});
