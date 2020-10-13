@@ -20,7 +20,7 @@ var datos = d3.dsv(";","/Archivos/pisa2018.csv", function(d) {
     var mod1 = +bandera[4]*ponderador;
     var mod2 = +bandera[5]*ponderador;
     var modificador = [ancho.toString(), bandera[1], bandera[2], altura.toString(), mod1.toString(), mod2.toString()];
-    console.log(modificador)
+    // console.log(modificador)
     var nueva_matrix = 'matrix('+modificador.toString()+')';
     // console.log(modificador)    
     d3.select('#mapa_ocde')

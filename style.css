@@ -18,7 +18,13 @@ h1{
 	color: white;
 	font-size: 50px; 
 }
+h2{
+    color: white;
+}
 
+p{
+    color: white;
+}
 .hidden {
 	display: none;
 }
@@ -29,15 +35,25 @@ body.whitemode {
     background: white;
 }
 
-h1.whitemode {
+h1.whitemode{
 	color: black;
 }
-h2.whitemode{
+
+h2.whitemode {
+    color: black;
+}
+
+p.whitemode{
     color: black;
 }
 .boton1.whitemode {
     border: 1px solid black;
     color: black;
+}
+
+.boton_pequeño.whitemode {
+    background: linear-gradient(90deg, white 50%, black 50%);
+    border: 2px solid black;
 }
 
 /* PORTADA */
@@ -86,6 +102,19 @@ h2.whitemode{
     width: 160px;
 }
 
+.boton_pequeño{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 11px;
+    background: linear-gradient(90deg, black 50%, white 50%);
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+
+
+
 /* CHILE */
 #chile {
     min-height: 100%;
@@ -103,9 +132,7 @@ h2.whitemode{
     float: left;
     text-align: center;
 }
-#psu {
-    color: white;
-}
+
 #datos_mapa_chile_2 {
     width: 500px;
     height: 500px;
@@ -122,6 +149,35 @@ h2.whitemode{
     height: 80%;
 }
 
+#info_chile{
+    width: 100%;
+    margin-top: 75px;
+    padding-bottom: 5rem;
+}
+#datos_mapa_chile_1 {
+    width: 500px;
+    height: 500px;
+    float: left;
+    color: white;
+    float: left;
+    text-align: center;
+}
+
+#datos_mapa_chile_2 {
+    width: 500px;
+    height: 500px;
+    float: right;
+    color: white;
+    float: left;
+    text-align: center;
+}
+#mapa_chile_container {
+    margin: auto;
+    float: left;
+}
+#mapa_chile {
+    height: 80%;
+}
 
 /* OCDE */
 #ocde {
@@ -228,6 +284,15 @@ h2.whitemode{
 
 }
 
+/*LIBROS CHILE */
+
+
+#datos_mapa_chile_1{
+    visibility: hidden;
+}
+#datos_mapa_chile_2{
+    visibility: hidden;
+}
 
 
 
