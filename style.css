@@ -30,6 +30,9 @@ p{
 }
 
 
+
+
+
 /* MODO CLARO */
 body.whitemode {
     background: white;
@@ -55,6 +58,13 @@ p.whitemode{
     background: linear-gradient(90deg, white 50%, black 50%);
     border: 2px solid black;
 }
+
+
+
+
+
+
+
 
 /* PORTADA */
 
@@ -115,6 +125,11 @@ p.whitemode{
 
 
 
+
+
+
+
+
 /* CHILE */
 #chile {
     min-height: 100%;
@@ -155,15 +170,42 @@ p.whitemode{
     padding-bottom: 5rem;
 }
 #datos_mapa_chile_1 {
+    position: relative;
     width: 500px;
     height: 500px;
     float: left;
     color: white;
     float: left;
     text-align: center;
+
+}
+.texto-encima1{
+    position: absolute;
+    top: 10px;
+    left: 177px;
+    text-decoration: underline #610402;
+    text-decoration: bold;
+}
+.texto-encima2{
+    position: absolute;
+    top: 50px;
+    left: 177px;
+}
+.text-debajo-promedio-regional{
+    position: absolute;
+    top: 210px;
+    left: 177px;
+    color: #7fc188;
+}
+.text-debajo-promedio-nacional{
+    position: absolute;
+    top: 230px;
+    left: 177px;
+    color: #bf7e8c;
 }
 
 #datos_mapa_chile_2 {
+    position: relative;
     width: 500px;
     height: 500px;
     float: right;
@@ -171,18 +213,51 @@ p.whitemode{
     float: left;
     text-align: center;
 }
+
+#Capa_1{
+    border: 2px double #610402;
+}
+
 #mapa_chile_container {
     margin: auto;
     float: left;
 }
 #mapa_chile {
     height: 80%;
+    margin-left: 70px;
+    margin-right: 70px;
 }
+
+
+
+
+
+
+
+
+
 
 /* OCDE */
 #ocde {
     min-height: 100%;
 }
+
+div#mapa_ocde {
+    height: 70%;
+}
+
+div#grafico_ocde {
+    height: 70%;
+}
+
+
+
+
+
+
+
+
+
 
 /* LA BARRA */
 
@@ -283,6 +358,10 @@ p.whitemode{
     }
 
 }
+
+
+
+
 
 /*LIBROS CHILE */
 
