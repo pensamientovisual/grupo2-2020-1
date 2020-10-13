@@ -177,7 +177,6 @@ p.whitemode{
     color: white;
     float: left;
     text-align: center;
-
 }
 .texto-encima1{
     position: absolute;
@@ -227,6 +226,10 @@ p.whitemode{
     margin-left: 70px;
     margin-right: 70px;
 }
+#AricaParinacota,
+#Tarapacá{cursor:pointer;}
+#AricaParinacota:hover{opacity: 0.7;}
+#Tarapacá:hover{opacity: 0.7;}
 
 
 
