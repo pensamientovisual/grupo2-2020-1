@@ -4,23 +4,39 @@
 }
 
 #info_chile {
-    width: 100%;
+    width: 100% !important;
+    display: flex;
     /* margin-top: 75px; */
     padding-bottom: 5rem;
     overflow: auto;
 }
 
 #mapa_chile_container {
-    float: left;
-    margin: auto;
+    /* float: left;
+    margin: auto; */
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#info_chile_1, #info_chile_2 {
+    display: inline-block;
+    margin: 0 auto;
 }
 
 #mapa_chile {
-    height: 80%;
+    height: 75vh;
     margin-left: 70px;
     margin-right: 70px;
 }
 
+.libro {
+    width: 150px;
+    height: auto;
+}
+
+
+
+/* 
 .texto-encima1 {
     position: absolute;
     top: 10px;
@@ -71,4 +87,4 @@
     float: left;
     text-align: center;
     visibility: hidden;
-}
+} */
