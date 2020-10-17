@@ -1,3 +1,5 @@
+/* Este archivo contiene scripts GENERALES para el funcionamiento del sitio. */
+
 var color = 'oscuro'
 $(document).ready(function(){
 	var menuBtn = $('.menu-icon'),
