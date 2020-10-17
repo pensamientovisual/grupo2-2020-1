@@ -14,3 +14,26 @@ div#grafico_ocde {
 #mapa_ocde svg text tspan{
     font-size: 3em;
 }
+.leyendas {
+	display: flex;
+	justify-content: center;
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+#Leyenda-rojo {
+	height: 10px;
+	fill: #e52421;
+}
+
+#Leyenda-verde{
+	height: 10px;
+	fill: #078136;	
+}
+
+#Leyenda-cyan{
+	height: 10px;
+	fill: #6ec6d9;
+}
+.parte-leyendat{
+	margin: 0;
+}
