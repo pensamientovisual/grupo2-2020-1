@@ -2,7 +2,6 @@
 
 body {
     background: #000D14;
-    height: 100%;
     font-family: 'Inter', sans-serif;
     max-width: 1500px;
     margin: auto;
@@ -36,31 +35,15 @@ h1.whitemode, h2.whitemode, h3.whitemode, p.whitemode {
 
 
 
-
-/* MODO CLARO */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PORTADA */
 
 #inicio {
-    min-height: 100%;
+    min-height: 100vh;
     text-align: center;
 }
 
 #titulo_portada {
-    padding-top: 20%;
+    padding-top: 25vh;
 }
 
 #titulo {
