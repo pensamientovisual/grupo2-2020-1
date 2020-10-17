@@ -8,6 +8,9 @@ body {
     margin: auto;
     padding: 0 20px 0;
 }
+body.whitemode {
+    background: white;
+}
 
 .main{
     /* padding-top: 15rem; */
@@ -15,19 +18,17 @@ body {
 }
 
 h1{
-	color: white;
 	font-size: 50px; 
 }
-h2{
+
+h1, h2, h3, p {
     color: white;
 }
-h3{
-    color: white;
+h1.whitemode, h2.whitemode, h3.whitemode, p.whitemode {
+	color: black;
 }
 
-p{
-    color: white;
-}
+
 .hidden {
 	display: none;
 }
@@ -37,34 +38,12 @@ p{
 
 
 /* MODO CLARO */
-body.whitemode {
-    background: white;
-}
 
-h1.whitemode{
-	color: black;
-}
 
-h2.whitemode {
-    color: black;
-}
 
-h3.whitemode {
-    color: black;
-}
 
-p.whitemode{
-    color: black;
-}
-.boton1.whitemode {
-    border: 1px solid black;
-    color: black;
-}
 
-.boton_pequeño.whitemode {
-    background: linear-gradient(90deg, white 50%, black 50%);
-    border: 2px solid black;
-}
+
 
 
 
@@ -108,9 +87,12 @@ p.whitemode{
     font-size: 1.5em;
     transition: all 0.2s linear;
 }
-
     .boton1:hover {
         background-color: rgb(56, 71, 70);
+    }
+    .boton1.whitemode {
+        border: 1px solid black;
+        color: black;
     }
 
 .espaciador1 {
@@ -128,145 +110,11 @@ p.whitemode{
     background: linear-gradient(90deg, black 50%, white 50%);
     border-radius: 20px;
     border: 2px solid white;
-  }
-
-
-
-
-
-
-
-
-/* CHILE */
-#chile {
-    min-height: 100%;
 }
-#info_chile{
-    width: 100%;
-    margin-top: 75px;
-    padding-bottom: 5rem;
-}
-#datos_mapa_chile_1 {
-    width: 500px;
-    height: 500px;
-    float: left;
-    color: white;
-    float: left;
-    text-align: center;
-}
-
-#datos_mapa_chile_2 {
-    width: 500px;
-    height: 500px;
-    float: right;
-    color: white;
-    float: left;
-    text-align: center;
-}
-#mapa_chile_container {
-    margin: auto;
-    float: left;
-}
-#mapa_chile {
-    height: 80%;
-}
-
-#info_chile{
-    width: 100%;
-    margin-top: 75px;
-    padding-bottom: 5rem;
-    overflow: auto; /* SUPER IMPORTANTE, NO SACAR -Javier */
-}
-#datos_mapa_chile_1 {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    float: left;
-    color: white;
-    float: left;
-    text-align: center;
-}
-.texto-encima1{
-    position: absolute;
-    top: 10px;
-    left: 177px;
-    text-decoration: underline #610402;
-    text-decoration: bold;
-}
-.texto-encima2{
-    position: absolute;
-    top: 50px;
-    left: 177px;
-}
-.text-debajo-promedio-regional{
-    position: absolute;
-    top: 210px;
-    left: 177px;
-    color: #7fc188;
-}
-.text-debajo-promedio-nacional{
-    position: absolute;
-    top: 230px;
-    left: 177px;
-    color: #bf7e8c;
-}
-
-#datos_mapa_chile_2 {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    float: right;
-    color: white;
-    float: left;
-    text-align: center;
-}
-
-#Capa_1{
-    border: 2px double #610402;
-}
-
-#mapa_chile_container {
-    margin: auto;
-    float: left;
-}
-#mapa_chile {
-    height: 80%;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-#AricaParinacota,
-#Tarapacá{cursor:pointer;}
-#AricaParinacota:hover{opacity: 0.7;}
-#Tarapacá:hover{opacity: 0.7;}
-
-
-
-
-
-
-
-
-
-
-/* OCDE */
-#ocde {
-    min-height: 100%;
-}
-
-div#mapa_ocde {
-    height: 70%;
-}
-
-div#grafico_ocde {
-    height: 70%;
-}
-
-#mapa_ocde svg text tspan{
-    font-size: 3em;
-}
-
-
-
+    .boton_pequeño.whitemode {
+        background: linear-gradient(90deg, white 50%, black 50%);
+        border: 2px solid black;
+    }
 
 
 
@@ -372,20 +220,5 @@ div#grafico_ocde {
     }
 
 }
-
-
-
-
-
-/*LIBROS CHILE */
-
-
-#datos_mapa_chile_1{
-    visibility: hidden;
-}
-#datos_mapa_chile_2{
-    visibility: hidden;
-}
-
 
 

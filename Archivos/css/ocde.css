@@ -1,0 +1,16 @@
+/* OCDE */
+#ocde {
+    min-height: 100%;
+}
+
+div#mapa_ocde {
+    height: 70%;
+}
+
+div#grafico_ocde {
+    height: 70%;
+}
+
+#mapa_ocde svg text tspan{
+    font-size: 3em;
+}
