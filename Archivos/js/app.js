@@ -3,7 +3,7 @@ particlesJS(
 	{
   "particles": {
     "number": {
-      "value": 100,
+      "value": 85,
       "density": {
         "enable": true,
         "value_area": 800
@@ -22,7 +22,7 @@ particlesJS(
         "nb_sides": 5
       },
       "image": {
-        "src": "Archivos/lapiz.png",
+        "src": "Archivos/lapiz2.0.png.png",
         "width": 100,
         "height": 100
       }
@@ -38,7 +38,7 @@ particlesJS(
       }
     },
     "size": {
-      "value": 25,
+      "value": 18,
       "random": true,
       "anim": {
         "enable": false,
