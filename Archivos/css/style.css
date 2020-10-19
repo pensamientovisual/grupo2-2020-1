@@ -20,13 +20,19 @@ h1{
 	font-size: 50px; 
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p{
     color: white;
 }
-h1.whitemode, h2.whitemode, h3.whitemode, p.whitemode {
+h1.whitemode, h2.whitemode, h3.whitemode, p.whitemode{
 	color: black;
 }
 
+text {
+    fill: white;
+}
+text.whitemode {
+    fill: black;
+}
 
 .hidden {
 	display: none;
