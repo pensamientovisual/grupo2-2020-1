@@ -42,11 +42,11 @@ $(document).ready(function(){
         $('#cl_region'+bloque).text(t_region);
         $('#cl_prom_region'+bloque_sub1).text('Promedio: '+t_psu);
         $('#cl_prom_chile'+bloque_sub1).text('Promedio Nacional: '+t_psu_nac);
-        $('#cl_prom_chile'+bloque_sub1).text('Lugar: '+t_lugp);
+        $('#cl_lugar'+bloque_sub1).text('Lugar: '+t_lugp);
     
         $('#cl_prom_region'+bloque_sub2).text('Promedio: '+t_simce);
         $('#cl_prom_chile'+bloque_sub2).text('Promedio Nacional: '+t_simce_nac);
-        $('#cl_prom_chile'+bloque_sub2).text('Lugar: '+t_lugs);
+        $('#cl_lugar'+bloque_sub2).text('Lugar: '+t_lugs);
         $.fn.ajustar_libro(bloque, t_psu, t_psu_nac, t_simce, t_simce_nac);
     };
 
@@ -132,6 +132,7 @@ $(document).ready(function(){
     });
 
     $('.region_cl').hover(function(){
+        $('#selector_cl').text($(this).attr('title'))
         var hover_class = $(this).attr('class').split(' ')
         if (region_1 && region_2) {
             if (!hover_class.includes('selec_cl')){
@@ -139,6 +140,7 @@ $(document).ready(function(){
             }
         }
     }, function(){
+        $('#selector_cl').text('Selecciona una o dos regiones')
         $(this).css('cursor', '')
     });
     
