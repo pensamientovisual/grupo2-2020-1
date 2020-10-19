@@ -37,3 +37,12 @@ div#grafico_ocde {
 .parte-leyendat{
 	margin: 0;
 }
+
+#info_ocde11, #info_ocde12, #info_ocde13, #info_ocde14{
+	font-size: 22px;
+}
+
+#info_ocde21, #info_ocde22, #info_ocde23, #info_ocde24{
+	font-size: 22px;
+}
+

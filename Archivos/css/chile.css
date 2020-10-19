@@ -10,6 +10,17 @@
     padding-bottom: 5rem;
     overflow: auto;
 }
+.info_texto_chile{
+    background: none;
+    color: white;
+    margin: 2rem;
+    padding: 1rem ;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+
+}
+
 
 #mapa_chile_container {
     /* float: left;
@@ -32,6 +43,17 @@
 .libro {
     width: 150px;
     height: auto;
+}
+#estudiar{
+    height: 24px;
+}
+.mas_info{
+    border-style: dashed;
+    border-width: 0.1rem;
+    border-color: #D0CECE;
+    margin: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 

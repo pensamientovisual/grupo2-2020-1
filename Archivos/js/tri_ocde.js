@@ -71,8 +71,11 @@ $(document).ready(function(){
         var pais_capa = $(this).attr('data-pais');
         var data_edu = $(this).attr('data-edu');
         var data_inm = $(this).attr('data-inm');
-        var data_ene = $(this).attr('data-ene');
-        console.log([pais_capa, data_edu, data_ene, data_inm]);
-        $('#info_ocde11').text('País:'+pais_capa+' Promedio Pisa:'+data_edu+' Porcentaje Población Inmigrantes: '+data_inm+'  Porcentaje Energía Primaria Renovable: '+data_ene);
+        var data_ene = $(this).attr('data-ene');      
+        // console.log([pais_capa, data_edu, data_ene, data_inm]);
+        $('#info_ocde11').text('País: '+pais_capa);
+        $('#info_ocde14').text('Promedio Pisa: '+data_edu);
+        $('#info_ocde12').text('% Población Inmigrantes: '+data_inm);
+        $('#info_ocde13').text('% Energía Primaria Renovable:  '+data_ene);
     });
 });
