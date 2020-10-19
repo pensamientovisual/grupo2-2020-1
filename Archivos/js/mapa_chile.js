@@ -8,6 +8,7 @@ var datos_chile = d3.dsv(";","/Archivos/datos_chile.csv", function(d, index) {
     var region = d3.select('#mapa_chile')
     .select('#'+id);
 
+    region.attr('data-index', index+1);
     region.attr('title', nombre);
     region.attr('aria-label', nombre);
     region.attr('data-nombre', nombre);
@@ -16,12 +17,15 @@ var datos_chile = d3.dsv(";","/Archivos/datos_chile.csv", function(d, index) {
     region.attr('data-lugar-psu', d.LugarPSU);
     region.attr('data-lugar-simce', d.LugarSIMCE);
     
+    d3.select('#tt'+(index+1).toString()).attr('style', 'visibility: hidden;')
+    
 });
 
 var region_1 = false;
 var region_2 = false;
 
-var color_destacado = '#610402'
+// var color_destacado = '#610402'
+var color_destacado = 'red'
 var color_base = 'rgb(223,223,223)'
 
 $(document).ready(function(){
@@ -133,6 +137,7 @@ $(document).ready(function(){
 
     $('.region_cl').hover(function(){
         $('#selector_cl').text($(this).attr('title'))
+        $('#tt'+$(this).attr('data-index')).attr('style', 'visbility: visible;')
         var hover_class = $(this).attr('class').split(' ')
         if (region_1 && region_2) {
             if (!hover_class.includes('selec_cl')){
@@ -140,6 +145,7 @@ $(document).ready(function(){
             }
         }
     }, function(){
+        $('#tt'+$(this).attr('data-index')).attr('style', 'display: none;')
         $('#selector_cl').text('Selecciona una o dos regiones')
         $(this).css('cursor', '')
     });

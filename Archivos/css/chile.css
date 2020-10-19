@@ -60,6 +60,16 @@
     cursor: pointer;
 }
 
+#cl_prom_region1, #cl_prom_region2, #cl_prom_region3, #cl_prom_region4 {
+    color: rgb(75,210,200) !important;
+}
+#cl_prom_chile1, #cl_prom_chile2, #cl_prom_chile3, #cl_prom_chile4 {
+    color: rgb(210,78,75) !important;
+}
+
+#info_chile_1, #info_chile_2 {
+    text-align: center;
+}
 
 /* 
 .texto-encima1 {
