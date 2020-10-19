@@ -60,7 +60,7 @@ function rellenar(d, index){
     capa.select('#gmedio'+int_ind)
     .select('circle')
     .attr('r', parseFloat(radio_orig)*(dato_inm*150))
-    .style('fill', 'cyan');
+    .style('fill', 'fcbf49');
     
     // Datos Inmigración
     capa.select('#gexterior'+int_ind)
