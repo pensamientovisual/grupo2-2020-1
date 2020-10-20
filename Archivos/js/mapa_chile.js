@@ -136,7 +136,7 @@ $(document).ready(function(){
     });
 
     $('.region_cl').hover(function(){
-        $('#selector_cl').text($(this).attr('title'))
+        // $('#selector_cl').text($(this).attr('title'))
         $('#tt'+$(this).attr('data-index')).attr('style', 'visbility: visible;')
         var hover_class = $(this).attr('class').split(' ')
         if (region_1 && region_2) {
@@ -146,8 +146,17 @@ $(document).ready(function(){
         }
     }, function(){
         $('#tt'+$(this).attr('data-index')).attr('style', 'display: none;')
-        $('#selector_cl').text('Selecciona una o dos regiones')
+        // $('#selector_cl').text('Selecciona una o dos regiones')
         $(this).css('cursor', '')
     });
     
+    for (let i = 0; i < 35; i++) {
+        if (i==0){
+            var i2 = ''
+        }
+        else {
+            var i2 = i.toString()
+        }
+        $('#gbandera'+i2).css("display","none")
+      }
 });

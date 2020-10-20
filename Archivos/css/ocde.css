@@ -32,7 +32,7 @@ div#grafico_ocde {
 
 #Leyenda-cyan{
 	height: 10px;
-	fill: #6ec6d9;
+	fill: rgb(252, 191, 73);
 }
 .parte-leyendat{
 	margin: 0;

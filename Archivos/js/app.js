@@ -1,3 +1,6 @@
+var op_linea = 0.5;
+var op_lapiz = 0.5;
+
 particlesJS(
 
 	{
@@ -22,7 +25,8 @@ particlesJS(
         "nb_sides": 5
       },
       "image": {
-        "src": "Archivos/lapiz2.0.png.png",
+        "src": "Archivos/lapiz3.0.png",
+        "opacity": 0.1,
         "width": 100,
         "height": 100
       }
@@ -51,7 +55,7 @@ particlesJS(
       "enable": true,
       "distance": 150,
       "color": "#FF0000",
-      "opacity": 0.8,
+      "opacity": op_linea,
       "width": 2
     },
     "move": {
