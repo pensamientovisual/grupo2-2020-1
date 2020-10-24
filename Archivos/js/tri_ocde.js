@@ -87,15 +87,16 @@ function rellenar(d, index){
 $(document).ready(function(){
 
     $('#grafico_ocde svg g').mouseover(function(){
-        console.log('Dentro de capa_ocde')
         var pais_capa = $(this).attr('data-pais');
         var data_edu = $(this).attr('data-edu');
         var data_inm = $(this).attr('data-inm');
-        var data_ene = $(this).attr('data-ene');      
-        // console.log([pais_capa, data_edu, data_ene, data_inm]);
-        $('#info_ocde11').text(pais_capa);
-        $('#info_ocde14').text('Promedio Pisa: '+data_edu);
-        $('#info_ocde12').text('% Población Inmigrantes: '+data_inm);
-        $('#info_ocde13').text('% Energía Primaria Renovable:  '+data_ene);
+        var data_ene = $(this).attr('data-ene'); 
+        var data_tag = $(this).attr('id');
+        if (data_tag != "OCDE_graf_Texto" && data_tag != "info_ocde11" && data_tag != "info_ocde12" && data_tag != "info_ocde13" && data_tag != "info_ocde14" ) {
+            $('#info_ocde11 text').text(pais_capa);
+            $('#info_ocde14 text').text('Promedio Pisa: '+data_edu);
+            $('#info_ocde12 text').text('% Población Inmigrantes: '+data_inm);
+            $('#info_ocde13 text').text('% Energía Primaria Renovable:  '+data_ene);
+        }
     });
 });

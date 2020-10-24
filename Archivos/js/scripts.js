@@ -14,8 +14,7 @@ $(document).ready(function(){
 		
 	});	
 	
-    $("#bt_color").click(function(){
-		// console.log('test')
+	$.fn.byn_color = function() {
 		if(color == 'oscuro') {
 			color = 'claro';
 			$("#bt_color_txt").text(`Modo Oscuro`)
@@ -47,34 +46,12 @@ $(document).ready(function(){
 				$('#libro-fondo-'+i.toString()).css("fill","rgb(0,13,20)")
 				$('#libro-svg-'+i.toString()+' path').css("fill","rgb(223,223,223)")
 			  }
+		}
+	}
 
-		}	
-	});
-
-	$(".boton_pequeño").click(function(){
-		// console.log('test')
-		if(color == 'oscuro') {
-			color = 'claro';
-			$("#bt_color_txt").text(`Modo Oscuro`)
-			$('body').addClass("whitemode")
-			$('h1').addClass("whitemode")
-			$('.boton1').addClass("whitemode")
-			$('.boton_pequeño').addClass("whitemode")
-			$('h2').addClass("whitemode")
-			$('p').addClass("whitemode")
-        }
-        else {
-			color = 'oscuro';
-            $("#bt_color_txt").text(`Modo Claro`)
-			$("body").removeClass("whitemode")
-			$('h1').removeClass("whitemode")
-			$('.boton1').removeClass("whitemode")
-			$('.boton_pequeño').removeClass("whitemode")
-			$('h2').removeClass("whitemode")
-			$('p').removeClass("whitemode")
-
-		}	
-	});
+	$("#bt_color").click(function(){$.fn.byn_color()})
+	
+	$(".boton_pequeño").click(function(){$.fn.byn_color()})
 
    
 
