@@ -135,9 +135,6 @@ var datos_chile = d3.dsv(";","/Archivos/datos_chile.csv", function(d, index) {
 
 
 
-    
-});
-
 var region_1 = false;
 var region_2 = false;
 
@@ -255,10 +252,8 @@ $(document).ready(function(){
     $('.region_cl').hover(function(){
         // $('#selector_cl').text($(this).attr('title'))
         $('#tt'+$(this).attr('data-index')).attr('style', 'visbility: visible;')
-
         d3.select('.tooltip1').style("opacity", 1)     //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
         d3.select('.tooltip1').html($(this).attr('data-nombre')) //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
-
         var hover_class = $(this).attr('class').split(' ')
         if (region_1 && region_2) {
             if (!hover_class.includes('selec_cl')){
