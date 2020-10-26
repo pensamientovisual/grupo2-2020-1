@@ -1,17 +1,17 @@
-IDE;Nombre;Región;X;Y;PSU;SIMCE;Promedio PSU lenguaje y matemáticas;Puntaje promedio SIMCE lenguaje;Puntaje promedio SIMCE matemáticas;LugarPSU;LugarSIMCE
-AricaParinacota;Arica y Parinacota;ARICA - PARINACOTA;55;13;472,8;272;472,8;274;270;15;1
-Tarapacá;Tarapacá;TARAPACÁ;59;42;485;260;485;264;256;12;14
-Antofagasta;Antofagasta;ANTOFAGASTA;56;94;493,8;264;493,8;267;261;7;5
-Atacama;Atacama;ATACAMA;45;155;484,2;261,5;484,2;266;257;13;11
-Coquimbo;Coquimbo;COQUIMBO;42;205;493,5;263;493,5;267;259;8;7
-Valparaíso;Valparaíso;VALPARAÍSO;40;240;494,4;261;494,4;263;259;5;12
-Metropolitana;Metropolitana;METROPOLITANA;106;250;511,8;267;511,8;268;266;1;3
-Ohiggins;O'Higgins;DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS;39;262;496,6;262;496,6;265;259;3;8
-Maule;Maule;DEL MAULE;90;285;498,6;267,5;498,6;269;266;2;2
-Ñuble;Ñuble;ÑUBLE;25;295;0;0;0;0;0;0;0
-Biobio;Bío Bío;DEL BÍO BÍO;85;316;493,9;265;493,9;267;263;6;4
-Araucanía;Araucanía;LA ARAUCANÍA;22;340;491;260,5;491;266;255;9;13
-Rios;Los Ríos;LOS RÍOS;80;360;489,9;262;489,9;268;256;10;9
-Lagos;Los Lagos;LOS LAGOS;20;395;496,3;263,5;496,3;268;259;4;6
-Aysen;Aysén;AYSÉN;85;468;480,3;256;480,3;260;252;14;15
-Magallanes;Magallanes;MAGALLANES Y DE LA ANTÁRTICA CHILENA;80;540;487,3;261,5;487,3;266;257;11;10
+IDE;Nombre;Región;PSU;SIMCE;Promedio PSU lenguaje y matemáticas;Puntaje promedio SIMCE lenguaje;Puntaje promedio SIMCE matemáticas;LugarPSU;LugarSIMCE
+AricaParinacota;Arica y Parinacota;ARICA - PARINACOTA;472,8;272;472,8;274;270;15;1
+Tarapacá;Tarapacá;TARAPACÁ;485;260;485;264;256;12;14
+Antofagasta;Antofagasta;ANTOFAGASTA;493,8;264;493,8;267;261;7;5
+Atacama;Atacama;ATACAMA;484,2;261,5;484,2;266;257;13;11
+Coquimbo;Coquimbo;COQUIMBO;493,5;263;493,5;267;259;8;7
+Valparaíso;Valparaíso;VALPARAÍSO;494,4;261;494,4;263;259;5;12
+Metropolitana;Metropolitana;METROPOLITANA;511,8;267;511,8;268;266;1;3
+Ohiggins;O'Higgins;DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS;496,6;262;496,6;265;259;3;8
+Maule;Maule;DEL MAULE;498,6;267,5;498,6;269;266;2;2
+Ñuble;Ñuble;ÑUBLE;0;0;0;0;0;;
+Biobio;Bío Bío;DEL BÍO BÍO;493,9;265;493,9;267;263;6;4
+Araucanía;Araucanía;LA ARAUCANÍA;491;260,5;491;266;255;9;13
+Rios;Los Ríos;LOS RÍOS;489,9;262;489,9;268;256;10;9
+Lagos;Los Lagos;LOS LAGOS;496,3;263,5;496,3;268;259;4;6
+Aysen;Aysén;AYSÉN;480,3;256;480,3;260;252;14;15
+Magallanes;Magallanes;MAGALLANES Y DE LA ANTÁRTICA CHILENA;487,3;261,5;487,3;266;257;11;10

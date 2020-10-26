@@ -71,15 +71,6 @@
     text-align: center;
 }
 
-#selector_chile {
-    text-align: center;
-    color: white
-}
-#selector_chile.whitemode {
-    color: black
-}
-
-
 /* 
 .texto-encima1 {
     position: absolute;
