@@ -26,7 +26,6 @@ $(document).ready(function(){
 			$('h3').addClass("whitemode")
 			$('p').addClass("whitemode")
 			$('text').addClass("whitemode")
-			$('#selector_chile').addClass("whitemode")
 			for (let i = 1; i < 5; i++) {
 				$('#libro-fondo-'+i.toString()).css("fill","white")
 				$('#libro-svg-'+i.toString()+' path').css("fill","rgb(0,13,20)")
@@ -43,7 +42,6 @@ $(document).ready(function(){
 			$('h3').removeClass("whitemode")
 			$('p').removeClass("whitemode")
 			$('text').removeClass("whitemode")
-			$('#selector_chile').removeClass("whitemode")
 			for (let i = 1; i < 5; i++) {
 				$('#libro-fondo-'+i.toString()).css("fill","rgb(0,13,20)")
 				$('#libro-svg-'+i.toString()+' path').css("fill","rgb(223,223,223)")
