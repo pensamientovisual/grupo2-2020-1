@@ -18,6 +18,123 @@ var datos_chile = d3.dsv(";","/Archivos/datos_chile.csv", function(d, index) {
     region.attr('data-lugar-simce', d.LugarSIMCE);
     
     d3.select('#tt'+(index+1).toString()).attr('style', 'visibility: hidden;')
+
+    return {
+    id: d.IDE,
+    nombre: d.Nombre,
+    psu: parseFloat(d.PSU),
+    rpsu: parseFloat(d.LugarPSU),
+    simce: parseFloat(d.SIMCE),
+    rsimce: parseFloat(d.LugarSIMCE),
+    cx: +d.X,
+    cy: +d.Y
+    }
+    
+}).then(function(data){
+    var Tooltip = d3.select("#mapa_chile_container")
+      .append("div")
+      .attr("class", "tooltip1")
+      .style("position", 'absolute')
+      .style("opacity", 0)
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px")
+
+
+    var mouseover = function(event, d) {
+        Tooltip.style("opacity", 1)
+    }
+    var mousemove = function(event, d) {
+        Tooltip
+            .html(d.nombre + "<br>" + "Lugar PSU: " + d.rpsu.toString() + "<br>" + "Lugar SIMCE: " + d.rsimce.toString())
+            // .style("left", (d3.pointer(event)[0]+15) + "px")
+            // .style("top", (d3.pointer(event)[1]) + "px")
+    }
+    var mouseleave = function(event, d) {
+        Tooltip.style("opacity", 0)
+    }
+
+    d3.select('#mapa_chile')
+    .append('g')
+        .attr('id', 'circulos_psu')
+        .selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+            .attr("cx", function(d){ return d.cx })
+            .attr("cy", function(d){ return d.cy })
+            .attr("r", function(d){ return (21-d.rpsu) })
+            .attr("class", "circulo_psu")
+            .attr('data-lugar', function(d){ return d.rpsu})
+            .attr('data-nombre', function(d){ return d.nombre})
+            .style("fill", "green")
+            .attr("stroke", "green")
+            .attr("stroke-width", 3)
+            .attr("fill-opacity", .4)
+        .on("mouseover", (event, d) => {mouseover(event, d)})
+        .on("mousemove", (event, d) => {mousemove(event, d)})
+        .on("mouseleave", (event, d) => {mouseleave(event, d)})
+    
+        d3.select('#mapa_chile')
+        .append('g')
+            .attr('id', 'circulos_simce')
+            .selectAll("circle")
+            .data(data)
+            .enter()
+            .append("circle")
+                .attr("cx", function(d){ return d.cx })
+                .attr("cy", function(d){ return d.cy })
+                .attr("r", function(d){ return (21-d.rsimce) })
+                .attr("class", "circulo_simce")
+                .attr('data-lugar', function(d){ return d.rsimce})
+                .attr('data-nombre', function(d){ return d.nombre})
+                .style("fill", "rgb(252, 191, 73)")
+                .attr("stroke", "rgb(252, 191, 73)")
+                .attr("stroke-width", 3)
+                .attr("fill-opacity", .4)
+            .on("mouseover", (event, d) => {mouseover(event, d)})
+            .on("mousemove", (event, d) => {mousemove(event, d)})
+            .on("mouseleave", (event, d) => {mouseleave(event, d)})
+
+
+    function update(){
+
+      // For each check box:
+      d3.selectAll(".checkbox").each(function(d){
+        cb = d3.select(this);
+        grp = cb.property("value")
+
+        // If the box is check, I show the group
+        if(cb.property("checked")){
+            if (grp == 'circulo_simce') {
+                d3.select('#mapa_chile').selectAll("."+grp).transition().duration(1000).style("opacity", 1).attr("r", function(d){ return 21-d.rsimce })
+            }
+            else if (grp == 'circulo_psu') {
+                d3.select('#mapa_chile').selectAll("."+grp).transition().duration(1000).style("opacity", 1).attr("r", function(d){ return 21-d.rpsu })
+            }
+
+        // Otherwise I hide it
+        }
+        else{
+            d3.select('#mapa_chile').selectAll("."+grp).transition().duration(1000).style("opacity", 0).attr("r", 0)
+        }
+      })
+    }
+
+    // When a button change, I run the update function
+    d3.selectAll(".checkbox").on("change",update);
+
+    // And I initialize it at the beginning
+    update()
+});
+
+
+
+
+
+
     
 });
 
@@ -138,6 +255,10 @@ $(document).ready(function(){
     $('.region_cl').hover(function(){
         // $('#selector_cl').text($(this).attr('title'))
         $('#tt'+$(this).attr('data-index')).attr('style', 'visbility: visible;')
+
+        d3.select('.tooltip1').style("opacity", 1)     //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
+        d3.select('.tooltip1').html($(this).attr('data-nombre')) //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
+
         var hover_class = $(this).attr('class').split(' ')
         if (region_1 && region_2) {
             if (!hover_class.includes('selec_cl')){
@@ -145,6 +266,7 @@ $(document).ready(function(){
             }
         }
     }, function(){
+        d3.select('.tooltip1').style("opacity", 1)   //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
         $('#tt'+$(this).attr('data-index')).attr('style', 'display: none;')
         // $('#selector_cl').text('Selecciona una o dos regiones')
         $(this).css('cursor', '')
