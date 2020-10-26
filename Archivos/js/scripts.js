@@ -71,8 +71,8 @@ $(document).ready(function(){
 		}
 	});
 	$(window).bind('scroll', function () {
-		if ($(window).scrollTop() > waltura-1) {
-			$('.main').css('margin-top', alt_nav);
+		if ($(window).scrollTop() > waltura) {
+			$('.main').css('margin-top', alt_nav+2);
 		} else {
 			$('.main').css('margin-top', 0);
 		}
