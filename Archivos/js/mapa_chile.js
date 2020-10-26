@@ -261,6 +261,9 @@ $(document).ready(function(){
         $('#tt'+$(this).attr('data-index')).attr('style', 'visbility: visible;')
         d3.select('.tooltip1').style("opacity", 1)     //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
         d3.select('.tooltip1').html($(this).attr('data-nombre')) //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
+        d3.select('.tooltip1')
+            .style("left", ($(this).offset().left+20) + "px")
+            .style("top", ($(this).offset().top-10) + "px")
         var hover_class = $(this).attr('class').split(' ')
         if (region_1 && region_2) {
             if (!hover_class.includes('selec_cl')){
@@ -268,7 +271,7 @@ $(document).ready(function(){
             }
         }
     }, function(){
-        d3.select('.tooltip1').style("opacity", 1)   //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
+        d3.select('.tooltip1').style("opacity", 0)   //CAMBIARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR!!!!!!!!!!!!
         $('#tt'+$(this).attr('data-index')).attr('style', 'display: none;')
         // $('#selector_cl').text('Selecciona una o dos regiones')
         $(this).css('cursor', '')
