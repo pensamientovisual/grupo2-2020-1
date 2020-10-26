@@ -1,3 +1,6 @@
+var pos1 = 0
+var pos2 = 0
+
 var datos_chile = d3.dsv(";","/Archivos/datos_chile.csv", function(d, index) {
     
     var id = d.IDE
@@ -49,8 +52,8 @@ var datos_chile = d3.dsv(";","/Archivos/datos_chile.csv", function(d, index) {
     var mousemove = function(event, d) {
         Tooltip
             .html(d.nombre + "<br>" + "Lugar PSU: " + d.rpsu.toString() + "<br>" + "Lugar SIMCE: " + d.rsimce.toString())
-            // .style("left", (d3.pointer(event)[0]+15) + "px")
-            // .style("top", (d3.pointer(event)[1]) + "px")
+            .style("left", pos2+(d3.pointer(event)[0]+30) + "px")
+            .style("top", pos1+(d3.pointer(event)[1]) + "px")
     }
     var mouseleave = function(event, d) {
         Tooltip.style("opacity", 0)
@@ -143,6 +146,10 @@ var color_destacado = 'red'
 var color_base = 'rgb(223,223,223)'
 
 $(document).ready(function(){
+    pos1 = $('#mapa_chile').offset().top
+    pos2 = $('#mapa_chile').offset().left
+
+
     $.fn.editar_info_cl = function(bloque, t_region, t_psu, t_psu_nac, t_simce, t_simce_nac, t_lugp, t_lugs){
         if (bloque == 1) {
             bloque = '1'
