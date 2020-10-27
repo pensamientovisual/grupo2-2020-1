@@ -4,7 +4,8 @@ body {
     background: #000D14;
     font-family: 'Inter', sans-serif;
     max-width: 1500px;
-    margin: auto;
+    margin-left: 7%;
+    margin-right: 7%;
     padding: 0 20px 0;
 }
 body.whitemode {
