@@ -95,8 +95,8 @@ $(document).ready(function(){
         if (data_tag != "OCDE_graf_Texto" && data_tag != "info_ocde11" && data_tag != "info_ocde12" && data_tag != "info_ocde13" && data_tag != "info_ocde14" ) {
             $('#info_ocde11 text').text(pais_capa);
             $('#info_ocde14 text').text('Promedio Pisa: '+data_edu);
-            $('#info_ocde12 text').text('% Población Inmigrantes: '+data_inm);
-            $('#info_ocde13 text').text('% Energía Primaria Renovable:  '+data_ene);
+            $('#info_ocde12 text').text('% Población Inmigrantes: '+data_inm*100);
+            $('#info_ocde13 text').text('% Energía Primaria Renovable:  '+data_ene*100);
         }
     });
 });
